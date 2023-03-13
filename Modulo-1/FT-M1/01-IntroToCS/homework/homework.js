@@ -1,15 +1,13 @@
 'use strict';
 
 function BinarioADecimal(num) {
-   let count = 0;
+   let sum = 0;
 
-   for (i = 0; i < num.length; i++) {
-    count += (num.startsWith("1") 
-              ? num[i] * 2 ** i 
-              : num[i] * 2 ** i / 2);
+   for (let i = 0; i < num.length; i++) {
+      sum += +num[i] * 2 ** (num.length - 1 - i);
    }
-   return count;
- }
+   return sum;
+}
 
 
 function DecimalABinario(num) { 
