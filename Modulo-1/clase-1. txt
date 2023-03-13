@@ -1,0 +1,54 @@
+half Adder = podemos diseñar circuitos que sean capaces de realizar 
+simples adiciones con la ayuda de compuertas lógicas
+Es un circuito lógico digital que realiza la suma binaria de dos números binarios de un solo bit. 
+El medio sumador se puede implementar utilizando puertas básicas como las puertas XOR y AND.
+
+and = las dos tienen que ser del mismo valor es V sino F (ACARREO)
+or = si los dos son verdaderos o al menos uno, el or es V sino F
+xor = si los dos valores son el mismo valor da F sino V (SUMA)
+not = negacion, se puede representar con !
+!true === false
+!false === true
+
+sistema unario = posee un unico simbolo para representar todos los num existentes
+le desventaja es que no es escalable, no nos permite simbolizar de manera rapida un num grande
+
+romano = es un metodo mas simplificado y eficaz que el sistema unario 
+
+posicional = es aquel en donde cada digito posee un valor que dependera de su posicion relativa
+
+binario = tiene como conjunto base dos numeros por lo gral son el 1 y el 0. 
+en informatica se representa como 1 true y 0 false
+
+binario decimal = 01100110 => si termina en 0 >>> es par
+                           => si termina en 1 >>> es impar
+ 
+Binario:      1           0             1      => termina en impar 
+posiciones:   2           1             0      // las posiciones empiezan de dcha a izq
+calculo:     (2^2)*1  +  (2^1)*0  +   (2^0)*1  // es 2 ^ a su posicion * por su num binario
+              4       +   0       +     1   =  5 // RESULTADO
+
+PARA PASAR EL NUMERO 8 A BINARIO SERIA =
+
+calculo = 8 / 2 
+calculo = 4 / 2   
+calculo = 2 / 2   
+calculo = 1 / 2 // ya no se puede dividir
+calculo = 0 
+se divide por 2 hasta que no se pueda dividir mas. 
+el numero binario se conforma por el resto de cada division
+RESULTADO = 1000
+
+codigo ASCII = codigo que utiliza numeros de 0 al 255 para representar 
+letras o caracter especial. Por ej Alt + 64 = @ 
+
+lenguaje de bajo nivel = son aquellos que ejercen control directo sobre el hardware y estan
+condicionados por estructura fisica (computadoras)
+
+lenguaje de alto nivel = expresan sus algoritmos de una manera mas educada con la capacidad 
+cognitiva de las personas, en lugar de hacerlo en lenguaje maquina
+
+
+
+
+
