@@ -1,3 +1,11 @@
+length()
+/* entrega la cantidad de elementos que contiene */
+let num = [1,2,3,4]
+console.log(num.length) //entrega 4
+
+
+
+
 charAt() 
 /* es como decir una posicion en especifico 
 en la que yo quiera trabajar. mas que nada para string   
@@ -32,6 +40,38 @@ trim()
  /* borra los espacios extremos de un string */
  let string = '   hola    '
  console.log(string.trim())
+
+
+
+
+Math.pow()
+/* hace una exponesacion de un numero.
+recibe 2 parametros el primero que es la base y 
+el segundo el exponente  */
+function BinarioADecimal(num){
+num = num.split('')
+var suma = 0;
+
+for(var i = 0; i < num.length; i++){
+  suma += Math.pow(2, num.length-1-i) * num [i]
+}
+return suma
+}
+
+
+
+
+ Math.floor()
+ /*redondea un numero para abajo */
+ function decimalABinario(num){
+ var binario = [];
+
+ while( num !== 0 ){
+  binario.unshift(num % 2)
+  num = Math.floor(num / 2) //redondea para abajo
+ }
+ return binario.join('')
+}
 
 
 
@@ -126,7 +166,7 @@ y nos devuelve como resultado 'false' */
 
 
 split()
-/* El método SPLIT() convierte un string en un arreglo, donde cada elemento contendrá un sub-string, 
+/* El método SPLIT() convierte un string, int o float en un arreglo, donde cada elemento contendrá un sub-string, 
 dependiendo del parámetro divisor que indiquemos.por ejemplo si ponemos :  */
 var palabra = 'Henri'
 var palabraSeparada = palabra.split('') 	//(esto mete un espacio entre cada caracter)
