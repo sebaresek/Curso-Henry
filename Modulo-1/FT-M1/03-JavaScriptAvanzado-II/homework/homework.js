@@ -43,7 +43,7 @@ la próxima vez que reciba el mismo argumento, no sea necesario volver a invocar
   squareCache(5)    // no volverá a invocar a square, simplemente buscará en la caché cuál es el resultado de square(5) y lo retornará (tip: si usaste un objeto, podés usar hasOwnProperty) */
 
 function cacheFunction(cb) {
-  let callback = [];
+  let callback = {};
   return function(arg){
     if (arg in callback){
       return callback[arg]
