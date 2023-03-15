@@ -65,7 +65,7 @@ let pm = 'Franco';
 if (true) {
    var instructor = 'The Flash';
    let pm = 'Reverse Flash';
-   console.log(instructor);      //The Flash
+   console.log(instructor);      //The Flash 00
    console.log(pm);              //Reverse Flash
 }
 console.log(instructor);         //The Flash
@@ -105,7 +105,7 @@ parseInt("09") //9
 function test() {
    console.log(a);         //Undefined
    console.log(foo());     //2
-
+// 
    var a = 1;
    function foo() {
       return 2;
@@ -146,12 +146,12 @@ var obj = {
       },
    },
 };
-
-console.log(obj.prop.getFullname());     
+// 
+console.log(obj.prop.getFullname());     //Aurelio De Rosa
 
 var test = obj.prop.getFullname;
 
-console.log(test());                      
+console.log(test());                     //Juan Perez              
 ```
 
 ### Event loop
@@ -160,14 +160,14 @@ Considerando el siguiente código, ¿Cuál sería el orden en el que se muestra 
 
 ```javascript
 function printing() {
-   console.log(1);
+   console.log(1);              //Primero
    setTimeout(function () {
-      console.log(2);
+      console.log(2);          //Cuarto
    }, 1000);
-   setTimeout(function () {
-      console.log(3);
+   setTimeout(function () {      
+      console.log(3);         //Tercero
    }, 0);
-   console.log(4);
+   console.log(4);            //Segundo
 }
 
 printing();
