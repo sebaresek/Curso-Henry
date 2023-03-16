@@ -1,4 +1,6 @@
 >>> CLOSURES : son funciones que retornan otras funciones. 
+nos permite guardar en memoria un valor fijo en la fn padre
+las fn que retorna, hereda esos valores y puede recibir parametros que son variables
 las cuales pueden acceder al contexto de su funcion padre.
 
 function saludar (saludo){
