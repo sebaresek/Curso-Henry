@@ -54,19 +54,6 @@ Queue.prototype.size = function () {
 };
 
 
-
-// function Stack(){
-//   this.array = []
-// }
-// Stack.prototype.agregar = function(num){
-//   this.array.push(num)
-// }
-// Stack.prototype.borrar = function(){
-//   return this.array.pop()
-// }
-
-// let newStack = new Stack()
-
 /*⚠️ No modificar nada debajo de esta línea ⚠️*/
 module.exports = {
    Queue,
