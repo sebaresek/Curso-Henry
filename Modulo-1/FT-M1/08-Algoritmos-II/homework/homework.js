@@ -32,9 +32,30 @@ function mergeSort(array) {
   // el array recibido como parámetro
   // Devolver el array ordenado resultante
   // Tu código:
+  if(array.length < 2) return array
 
-  //okey probemos ahora
-}
+  const mitad = Math.floor(array.length / 2)
+  let left = array.slice(0, mitad)  // slice corta el array y genera uno nuevo
+  let right = array.slice(mitad, array.length)  // eslo mismo que pones (mitad) ya q toma todo pa delante
+
+  // como ya lo dividi piso el array anterior es decir no es necesario colocar new array
+
+  array = [] 
+  // ahora se viene recursion
+  left = mergeSort(left) // ordeno con mersort
+  right = mergeSort (right)
+
+  while (left.length && right.length ){ // comparo izquierda y derecha
+    if (left [0] < right[0]){    // pusheo en caso de ser verdadero el piquito
+      array.push(left.shift())
+    }
+    else array.push(right.shift()) // ---> cuidado aca  estas solamente pusheando el otro en caso de no                                             cumplirse lo del if
+  }
+  array = array.concat(left, right) // ahora concateno ya lo retornto 
+
+  return array
+
+  }
 
 // No modificar nada debajo de esta línea
 // --------------------------------

@@ -133,7 +133,7 @@ let nuevaString = 'hola'
 let transformado = nuevaString.slice(1, 3) /* si le pongo el {1} 
 le estoy indicando que me empiece a mostrar a partir del ese indice 
 y el {3} indica que desde el indice 3 para adelante sera borrado */
-console.log(transformado)
+console.log(transformado) // ENTREGA : ola
 
 
 

@@ -107,3 +107,18 @@ los stack tienen dos operaciones : push() y shift(). esto es porque solo se pued
 push() agrega al final
 shift() saca al primero en entrar   
 */
+
+function guardarTragos(tragosQueue) {
+  const tragos = {};
+
+  while (tragosQueue.size() > 0) {
+    const trago = tragosQueue.dequeue();
+    if (!tragos[trago]) {
+      tragos[trago] = { trago, cantidad: 1 };
+    } else {
+      tragos[trago].cantidad++;
+    }
+  }
+
+  return tragos;
+}
