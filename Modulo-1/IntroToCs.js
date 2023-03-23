@@ -1,3 +1,0 @@
-/* 
-introduccion a la compiuter ciense
-*/
