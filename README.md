@@ -1,6 +1,6 @@
 ﻿# Curso-Henry
 ----
-## ** 💪 Actividades y Apuntes** 
+## **💪 Actividades y Apuntes** 
 
 </br >
 
