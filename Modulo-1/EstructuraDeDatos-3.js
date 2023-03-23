@@ -2,8 +2,7 @@
  ejemplos : arbol binarios - arbol binario de busqueda 
  - avl - max heap
 
-
-
+ nodo hoja: es el que no tiene hijos
  */
 
 
@@ -55,10 +54,11 @@ BinarySearchTree.prototype.depthFirstForEach = function(cb, pedido){
         if(this.right && this.right.depthFirstForEach(cb, pedido));
     }//Recorre asi : []
 
-    if(pedido === 'pre-order'){
+    if(pedido === 'post-order'){
+        if(this.left && this.left.depthFirstForEach(cb, pedido));
         if(this.right && this.right.depthFirstForEach(cb, pedido));
         cb(this.left);
-        if(this.left && this.left.depthFirstForEach(cb, pedido));
+
     } //Recorre asi : [1, 3, 2, 8,5]
 }
 
