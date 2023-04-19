@@ -7,7 +7,7 @@ const bash = () => {
 
    process.stdin.on('data', (data) => {
       let args = data.toString().trim().split('');
-      let cmd = args[0]
+      let cmd = args.shift()
 
       commands[cmd]
       ? commands[cmd](print, args.join(' '))

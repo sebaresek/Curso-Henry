@@ -1,6 +1,7 @@
 const fs = require("fs");
-const utils = require("../utils/request");
+const { request } = require("../utils/request");
 const process = require("process");
+const { error } = require("console");
 
 const pwd = (print) => {
     print(process.cwd())
@@ -28,21 +29,34 @@ const cat = (print, args) => {
     })
 }
 
-const head = () => {
-
+const head = (print, args) => {
+    fs.readFile(args, 'utf-8', (error, data) => {
+        if(error) throw Error(error);
+        print(data.split('\n')[0])
+    })
 }
 
-const tail = () => {
-
+const tail = (print, args) => {
+    fs.readFile(args, 'utf-8', (error, data) =>{
+        if(error) throw Error (error);
+        print(data.split('\n').at(-1).trim())
+    })
 }
 
-const curl = () => {
-
+const curl = (print, args) => {
+    utils.request(`https://${args}`, (error, response) =>{
+        if(error) return error;
+        print(response)
+    })
 }
 
 module.exports = {
     pwd,
     date,
-    echo,
-    ls
+    echo, 
+    ls,
+    cat,
+    head,
+    tail,
+    curl
 };
