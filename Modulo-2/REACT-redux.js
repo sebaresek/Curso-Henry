@@ -23,8 +23,8 @@ separa los problemas de logica de lo presentacional
 obtenemos componente reutilizables
 localizamos la complejidad en los containers
 
-npx create-react-app demo-react-redux
 
-npm i redux@4.0.5 react-redux redux-thunk
+npm create-react-app nombreDeLaCarpeta
+npm i redux@4.0.5 react-redux redux-thunk react-router-dom@6.3.0 axios
 
 */

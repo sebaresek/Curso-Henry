@@ -1,0 +1,17 @@
+{
+  "name": "demo-testing",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "test:01": "jest ./funciones.test.js --watchAll",
+    "test:02": "jest ./otrasFunciones.test.js"
+  },
+  "keywords": [],
+  "author": "Daiana Grillia <daiana_agustina@outlook.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
